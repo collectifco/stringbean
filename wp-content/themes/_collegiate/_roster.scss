@@ -1,0 +1,152 @@
+#roster {
+	max-width: calc(100% - 2em);
+	/*margin: 1em 0 1em 1em;*/
+}
+
+#roster td{
+	border-left: none;
+	border-right: none;
+}
+#roster tr:last-child > td {
+	border-bottom: none;
+}
+/*#roster tr:first-child > td {
+	border-top: none;
+	background: #f9f9f9;
+	font-family: $sans-serif;
+}*/
+#roster .row1 {
+	border-top: none;
+	background: #f9f9f9;
+	font-family: $sans-serif;
+	height: 2.5em;
+	line-height: 2.5em;
+}
+#roster tr:nth-child(2) > td, .roster tr:nth-child(2) {
+	border-top: none;
+}
+#roster td img{
+	padding: -0.5em;
+	margin: -0.125em -0.5em -0.5em 0em;
+	height: 2em;
+	width: 2em;
+	border-radius: 50%;
+}
+
+#standings {
+	font-family: $sans-serif;
+	font-size: 0.875em;
+	text-align: left;
+}
+
+#standings-zodiacs {
+	color: $red;
+}
+#standings td {
+	border: none;
+}
+#standings .row1{
+	border-bottom: 1px solid $grey;
+	height: 2.5em;
+	line-height: 2.5em;
+	background: #f9f9f9;
+}
+
+#standings .row2 {
+	color: $red;
+}
+
+sorttable_alpha {
+	padding: 0.25em;
+}
+
+#calendar {
+	text-align: center;
+	width: calc(100% - 2em);
+}
+
+#calendar .row1 {
+	font-family: $sans-serif;
+	border: none;
+	background: #f9f9f9;
+	height: 2.5em;
+	line-height: 2.5em;
+}
+
+#calendar img {
+	width: 100%;
+	height: auto;
+	max-width: 1.75em;
+}
+
+#calendar .home {
+	background: $red;
+	border: none;
+}
+
+#calendar .away {
+	background: $grey;
+	border: none;
+}
+
+.athletics-menu ul {
+	width: 100%;
+	background: $grey;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.athletics-menu ul li {
+	width: 100%;
+	padding: 0.5em;
+}
+
+.post-news header {
+	display: none;
+}
+
+.grid-1-3 button {
+	margin: auto;
+	font-family: $sans-serif;
+	font-weight: 400;
+	color: $red;
+	background: none;
+	border: none;
+	border-top: 0.125em solid $red;
+	border-radius: 0;
+	width: auto;
+	padding: 0.5em 0;
+	box-shadow: none;
+}
+
+
+#calendar tr:first-child > td{
+	/*border-top: none;*/
+}
+#calendar tr:last-child > td{
+	border-bottom: none;
+}
+#calendar tr td:first-child{
+	border-left: none;
+}
+#calendar tr td:last-child{
+	border-right: none;
+}
+
+#roster th {
+	text-align: left;
+}
+
+@media screen and (max-width: 45em) {
+	#roster table, thead {
+		font-size: 0.75em;
+		padding: 0;
+	}
+	#table {
+		margin: 0 auto;
+	}
+	#roster tr td:first-child, #roster .row1 .col1{
+		display: none;
+	}
+}

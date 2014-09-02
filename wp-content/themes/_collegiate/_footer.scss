@@ -1,0 +1,32 @@
+.site-footer {
+	background: $red; 
+	@include max-width(); 
+	margin: auto; 
+	padding: $padding; 
+	margin-top: $spacing;
+	margin-bottom: calc($spacing * 2); 
+	color: $white;
+	border-top: 2px solid $red;
+	overflow: hidden;
+	font-size: 0.75em;
+	}
+
+footer a:hover {
+	border-top: 2px solid $white;
+	}
+
+.fullfooter {
+	background: $lightred;
+	}
+
+@media screen and (max-width: 45em) {
+
+	.grid-1-7 {
+		display: none;
+		}
+	#footer-contact {
+			width: 100%;
+			font-size: 150%;
+			display: block;
+		}
+	}

@@ -1,0 +1,47 @@
+//Colour Variables
+$red: #ed202d;
+//$red: #f84e57;
+$grey: #e2e1dd;
+$lightgrey: #f5f4f3;
+$black: #323132;
+//$white: #f8f8f8;
+$white: #fff;
+$lightred: rgba(237, 25, 65, 0.25);
+
+$maxwidth: 1200px;
+$sans-serif:	'Montserrat', sans-serif;
+$serif:			'Crimson Text', 'Georgia', serif;
+$spacing: 2em;
+$padding: 1em;
+
+
+@mixin max-width() {
+  max-width: 1200px;
+  width: 95%;
+  @include box-sizing;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-sizing() {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+   box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+@mixin transition() {
+	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 45em) {
+//	$spacing: 1em;
+//	$padding: 0.5em;
+}
